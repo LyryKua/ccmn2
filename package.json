@@ -26,5 +26,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "tslint": "^5.14.0",
+    "tslint-config-yoshi": "^3.30.5"
+  }
 }

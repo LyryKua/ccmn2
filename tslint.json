@@ -1,14 +1,22 @@
 {
     "defaultSeverity": "error",
     "extends": [
-        "tslint:recommended",
-        "tslint-react"
+      "tslint:recommended",
+      "tslint-react"
     ],
     "jsRules": {},
     "rules": {
-        "jsx-wrap-multiline": false,
-        "quotemark": false,
-        "ordered-imports": false
+      "quotemark": [
+        true,
+        "single",
+        "jsx-double"
+      ],
+      "jsx-no-multiline-js": false,
+      "ordered-imports": false,
+      "no-console": {
+        "severity": "warning",
+        "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+      }
     },
     "rulesDirectory": []
 }

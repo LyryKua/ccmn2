@@ -28,7 +28,19 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@types/enzyme": "^3.9.1",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
     "tslint": "^5.14.0",
-    "tslint-config-yoshi": "^3.30.5"
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-react": "^3.6.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.spec.{ts,tsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ]
   }
 }

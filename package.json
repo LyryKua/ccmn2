@@ -35,12 +35,5 @@
     "tslint": "^5.14.0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-react": "^3.6.0"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "**/*.spec.{ts,tsx}",
-      "!**/node_modules/**",
-      "!**/vendor/**"
-    ]
   }
 }

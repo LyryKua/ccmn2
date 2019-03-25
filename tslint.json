@@ -16,7 +16,8 @@
       "no-console": {
         "severity": "warning",
         "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
-      }
+      },
+      "interface-over-type-literal": false
     },
     "rulesDirectory": []
 }

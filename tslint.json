@@ -22,7 +22,9 @@
       "jsx-boolean-value": false,
       "interface-name": false,
       "member-access": false,
-      "arrow-parens": false
+      "arrow-parens": false,
+      "no-empty-interface": false,
+      "jsx-no-lambda": false
     },
     "rulesDirectory": []
 }

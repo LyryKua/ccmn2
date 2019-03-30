@@ -1,3 +1,6 @@
+// TODO: add activeClassName for NavLink
+// TODO: fix Switch in menu
+
 import React, { Component, ComponentType, ReactElement } from 'react';
 import { withStyles, WithStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
@@ -31,6 +34,7 @@ import Analytics from '../Analytics';
 import Map from '../Map';
 import Correlation from '../Correlation';
 import Prediction from '../Prediction';
+import Error404 from '../Error404';
 
 type Props = WithStyles<typeof s, true>;
 type State = {
@@ -133,7 +137,6 @@ class App extends Component<Props, State> {
                   key={item.title}
                   exact
                   to={item.path}
-                  activeStyle={{ backgroundColor: 'red' }}
                 >
                   <ListItem button>
                     <ListItemIcon>{item.icon}</ListItemIcon>
@@ -157,7 +160,7 @@ class App extends Component<Props, State> {
                 />
               ))
             }
-            <Route render={() => <div>404</div>} />
+            <Route component={Error404} />
           </Switch>
         </main>
       </div>

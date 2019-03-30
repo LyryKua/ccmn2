@@ -16,7 +16,15 @@
       "no-console": {
         "severity": "warning",
         "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
-      }
+      },
+      "interface-over-type-literal": false,
+      "object-literal-sort-keys": false,
+      "jsx-boolean-value": false,
+      "interface-name": false,
+      "member-access": false,
+      "arrow-parens": false,
+      "no-empty-interface": false,
+      "jsx-no-lambda": false
     },
     "rulesDirectory": []
 }

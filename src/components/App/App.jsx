@@ -1,8 +1,7 @@
 // TODO: add activeClassName for NavLink
 // TODO: fix Switch in menu
 
-import React, { Component, ComponentType, ReactElement } from 'react';
-import { withStyles, WithStyles } from '@material-ui/core/styles';
+import React, { Component } from 'react';
 import classNames from 'classnames';
 import {
   AppBar,
@@ -15,6 +14,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  withStyles,
 } from '@material-ui/core';
 import {
   Route,
@@ -36,17 +36,7 @@ import Correlation from '../Correlation';
 import Prediction from '../Prediction';
 import Error404 from '../Error404';
 
-type Props = WithStyles<typeof s, true>;
-type State = {
-  isOpen: boolean;
-};
-
-const items: Array<{
-  icon: ReactElement;
-  title: string;
-  component: ComponentType;
-  path: string;
-}> = [
+const items = [
   {
     icon: <GroupIcon />,
     title: 'Analytics',
@@ -73,7 +63,7 @@ const items: Array<{
   },
 ];
 
-class App extends Component<Props, State> {
+class App extends Component {
   state = {
     isOpen: false,
   };
